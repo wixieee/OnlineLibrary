@@ -1,8 +1,63 @@
-HELP.md
+### Java ###
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# Logs
+logs/
+*.log
+*.out
+
+# Runtime files
+hs_err_pid*
+replay_pid*
+
+### Maven ###
 target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+dependency-reduced-pom.xml
+release.properties
+buildNumber.properties
+.mvn/timing.properties
+
+### Gradle ###
+.gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+gradle-app.setting
+
+### Spring Boot ###
+*.db
+*.h2.db
+*.mv.db
+*.trace.db
+
+### Environment variables ###
+.env
+.env.*
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+.history/
 
 ### STS ###
 .apt_generated
@@ -13,21 +68,17 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+### OS-specific ###
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
 
-### VS Code ###
-.vscode/
+# Linux
+*~
